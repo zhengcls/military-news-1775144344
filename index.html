@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-page-mode" content="app">
+<title>军事动态2026-04-02</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{background:#0f172a;color:#e2e8f0;font-family:-apple-system,Microsoft YaHei,sans-serif}
+.w{max-width:1000px;margin:0 auto;padding:16px}
+.hd{text-align:center;padding:16px 0 8px;border-bottom:1px solid #1e293b}
+.tt{font-size:20px;font-weight:700;color:#3b82f6}
+.dt{font-size:13px;color:#94a3b8;margin-top:3px}
+.vw{position:relative;width:100%;background:#000;border-radius:10px;overflow:hidden;margin:8px 0}
+.vw video{display:block;width:100%}
+.play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:10;pointer-events:none}
+.play svg{width:30px;height:30px;fill:#fff;margin-left:3px}
+.s{background:#1e293b;border-radius:10px;padding:14px;margin-bottom:10px;border-left:4px solid #3b82f6}
+.t{display:inline-block;padding:2px 9px;border-radius:14px;font-size:11px;font-weight:600;background:#dc2626;color:#fff;margin-bottom:6px}
+.h{font-size:16px;font-weight:600;color:#fff;margin-bottom:5px}
+.c{font-size:14px;color:#94a3b8;line-height:1.65}
+.ft{text-align:center;padding:16px 0;color:#475569;font-size:12px;border-top:1px solid #1e293b;margin-top:16px}
+</style>
+</head>
+<body>
+<div class="w">
+<div class="hd"><div class="tt">全球军事动态</div><div class="dt">2026-04-02</div></div>
+<div class="vw">
+<video id="v" playsinline webkit-playsinline x5-video-player-type="h5" preload="metadata" controls>
+<source src="https://cdn.jsdelivr.net/gh/zhengcls/military-news-1775144344/military_news_final.mp4" type="video/mp4">
+</video>
+<div class="play" id="p" onclick="play()">
+<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+</div>
+</div>
+<div class="s"><span class="t">武装冲突</span><div class="h">中方：尽早结束这场不该发生的战争</div><div class="c">中方：尽早结束这场不该发生的战争</div></div><div class="s"><span class="t">导弹武器</span><div class="h">美媒：美军使用“未经实战检验”导弹</div><div class="c">美媒：美军使用“未经实战检验”导弹</div></div><div class="s"><span class="t">导弹武器</span><div class="h">中东战局美“战斧”导弹消耗创纪录：已发射850枚</div><div class="c">中东战局美“战斧”导弹消耗创纪录：已发射850枚</div></div><div class="s"><span class="t">武装冲突</span><div class="h">特朗普：即使霍尔木兹海峡仍关闭 也愿意结束战争</div><div class="c">特朗普：即使霍尔木兹海峡仍关闭 也愿意结束战争</div></div><div class="s"><span class="t">中东局势</span><div class="h">特朗普：将很快撤出伊朗战事</div><div class="c">特朗普：将很快撤出伊朗战事</div></div><div class="s"><span class="t">军事动态</span><div class="h">美防长战前"未遂交易"引巨大争议 被批评堪比"叛国"</div><div class="c">美防长战前"未遂交易"引巨大争议 被批评堪比"叛国"</div></div><div class="s"><span class="t">武器装备</span><div class="h">第三艘航母出动数千名士兵抵达 美军大举增兵中东战</div><div class="c">第三艘航母出动数千名士兵抵达 美军大举增兵中东战</div></div>
+<div class="ft">全球军事动态日报 | 当日实时搜索</div>
+</div>
+<script>
+var v=document.getElementById('v'),p=document.getElementById('p');
+function play(){v.muted=false;v.play().then(function(){p.style.display='none'}).catch(function(){})}
+v.addEventListener('ended',function(){p.style.display='flex'});
+v.addEventListener('pause',function(){p.style.display='flex'});
+v.addEventListener('playing',function(){p.style.display='none'});
+</script>
+</body>
+</html>
